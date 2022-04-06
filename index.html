@@ -15,7 +15,7 @@
       <table class='table table-bordered'>
         <thead>
           <tr>
-            <th class='text-center'>
+            <th class='text-center' style="width: 50%;">
               liff
             </th>
             <th class='text-center'>
@@ -25,12 +25,12 @@
         </thead>
         <tbody>
           <tr>
-            <td>liff.ready()</td>
-            <td id='result-liff-ready'>loading...</td>
+            <td>liff.init()</td>
+            <td id='result-liff-init'></td>
           </tr>
           <tr>
-            <td>liff.init()</td>
-            <td id='result-liff-init'>loading...</td>
+            <td>liff.ready()</td>
+            <td id='result-liff-ready'></td>
           </tr>
           <tr>
             <td>liff.getOS()</td>
@@ -51,6 +51,49 @@
           <tr>
             <td>liff.isInClient()</td>
             <td id='result-liff-is-in-client'></td>
+          </tr>
+          <tr>
+            <td>liff.isLoggedIn()</td>
+            <td id='result-liff-is-logged-in'></td>
+          </tr>
+          <tr>
+            <td>liff.isApiAvailable('shareTargetPicker')</td>
+            <td id='result-liff-is-api-available-1'></td>
+          </tr>
+          <tr>
+            <td>liff.isApiAvailable('multipleLiffTransition')</td>
+            <td id='result-liff-is-api-available-2'></td>
+          </tr>
+          <tr>
+            <td>liff.getAccessToken()</td>
+            <td id='result-liff-get-access-token'></td>
+          </tr>
+          <tr>
+            <td>liff.getIDToken()</td>
+            <td id='result-liff-get-id-token'></td>
+          </tr>
+          <tr>
+            <td>liff.getDecodedIDToken()</td>
+            <td id='result-liff-get-decode-id-token'></td>
+          </tr>
+          <tr>
+            <td>liff.getContext()</td>
+            <td id='result-liff-get-context'></td>
+          </tr>
+          <tr>
+            <td>liff.getProfile()</td>
+            <td id='result-liff-get-profile'></td>
+          </tr>
+          <tr>
+            <td>liff.getFriendship()</td>
+            <td id='result-liff-get-friendship'></td>
+          </tr>
+          <tr>
+            <td>liff.scanCodeV2()</td>
+            <td>
+              <a href='#' onclick='onClickScanCode()'>scan code</a>
+              <p id='result-liff-scan-code'></p>
+            </td>
           </tr>
           <tr>
             <td>liff.closeWindow()</td>

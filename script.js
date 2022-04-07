@@ -8,7 +8,7 @@ document.getElementById('result-liff-is-in-client').innerHTML = liff.isInClient(
 
 liff
   .init({
-    liffId: '1655282255-NyVZMY3z'
+    liffId: 'YOUR-LIFF-ID'
   })
   .then(() => {
     document.getElementById('result-liff-init').innerHTML = 'success';
